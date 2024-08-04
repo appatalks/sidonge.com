@@ -1,0 +1,63 @@
+
+body 
+	{ 
+    font: 62.5%/1.5  "Lucida Grande", "Lucida Sans", Tahoma, Verdana, sans-serif; 
+    background: url() repeat; 
+    color: #000000;     
+    text-align:center; 
+} 
+
+#wrapper 
+    {  
+    width:;  
+    text-align:;   
+    margin-left:auto;  
+    margin-right:auto;  
+    background-color: #FFFFFF; 
+}
+
+#header 
+	{/* Image by anjunabeats9.deviantART.com */
+background:url("../files/lost_love.jpg") no-repeat center center;
+height:225px;
+width:800px;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  margin-top: -115px;
+  margin-left: -400px;
+}
+
+/* Headers and Paragraph */
+h1 {
+    font-size: 36px;
+    line-height: 40px;
+}
+ 
+h2 {
+    font-size: 30px;
+    line-height: 40px;
+}
+ 
+h3 {
+    font-size: 24px;
+    line-height: 40px;
+}
+ 
+h4 {
+    font-size: 22px;
+    line-height: 20px;
+}
+ 
+h5 {
+    font-size: 18px;
+    line-height: 20px;
+	color: #CCC;
+	margin-top:100px;
+}
+ 
+h6 {
+    font-size: 16px;
+    line-height: 20px;
+	text-align:justify;
+}

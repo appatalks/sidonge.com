@@ -1,0 +1,126 @@
+
+Snaptortoise Web Development
+
+    About
+    Clientele
+    Projects
+    Contact
+    Work With Us »
+
+Konami-JS
+
+Update May 2013 — Support this project over at Teespring ? http://teespring.com/konami-js. If we can get 30 pre-orders by June 4th, 2013 they get printed!
+
+Update April 2012 — Hey! This got a mention on Smashing Magazine. Thanks for the shout-out!
+
+Every site should have the Konami Code. It makes things more fun. If you're unfamiliar with it, the Konami Code is a cheat code that appeared in many of Konami's video games going all the way back to 1986. Recently, ESPN received attention for the funny, flashy things that would happen when the code was entered on their website. Those shenanigans were the inspiration for whipping up this script.
+
+    The Code
+    The JavaScript Code
+    Simplest Example
+    Second Simplest Example
+    Third Simplest Example
+    WordPress Plugin
+    iPhone Support
+    Support this Project
+
+The Code
+
+In case you don't know, the Konami Code is:
+
+Up, Up, Down, Down, Left, Right, Left, Right, B, A, Start
+
+For our purposes, we've replaced Start with Enter.
+The JavaScript Code
+
+The code is being hosted over at Google Code (Please use GitHub) AND on GitHub where you can download the examples and original source:
+
+    https://github.com/snaptortoise/konami-js
+
+The beauty of hosting it there is you can just copy and paste the examples below. No need to download anything.
+Simplest Example
+
+The most basic example takes the user to Google when they enter the code correctly. Just add this in the <HEAD></HEAD>:
+
+<script type="text/javascript" src="https://raw.github.com/snaptortoise/konami-js/master/konami.js"></script>
+<script type="text/javascript">
+	var konami = new Konami('http://www.google.com');
+</script>
+		
+
+The default behavior is to redirect the browser to whatever web address is passed to new Konami(url)
+Second Simplest Example
+
+A slightly more complicated examples show how you can redefine Konami.code and have it alert with a pop-up message instead:
+
+<script type="text/javascript" src="https://raw.github.com/snaptortoise/konami-js/master/konami.js"></script>
+<script type="text/javascript">
+	var success = function() {
+		alert("You have entered the KONAMI CODE!  You now have 30 lives.  Kinda.")
+	}
+	
+	var konami = new Konami(success);
+	
+</script>
+			
+
+When the user enters the Konami Code on this page, he or she is greeted with a message informing them that they've just acquired 30 lives. Sort of. Redfining konami.code() opens the door to do some fun things. You could even hook it into your Google Analytics tracking and measure when your users enter the code, for whatever that's worth.
+
+Third Simplest Example
+
+Maybe you want some other combination of keys to trigger a special event on your page? No problem. Just redefine the konami.pattern variable to match the sequence of keyCodes you want. This example would match the user hitting up twelve times:
+
+<script type="text/javascript" src="https://raw.github.com/snaptortoise/konami-js/master/konami.js"></script>
+<script type="text/javascript">
+	var success = function() {
+		alert("You have hit up four times.  Why you did this, I don't know.")
+	}
+	konami = new Konami(success)
+	konami.pattern = "383838383838383838383838"
+
+</script>
+						
+
+WordPress Plugin
+
+Adrian Hanft has developed a WordPress plugin called Konami Easter Egg that uses Konami-JS to embed the Konami code in your blog
+iPhone Support!
+
+Konami-JS now features iPhone gesture support! You don't have to do anything differently either - konami.load() will automatically call konami.iphone.load() and pass the same variables along to it, triggering the same easter egg. If you'd like the Konami Code to trigger something different for iPhone users, you can do this:
+
+<script type="text/javascript" src="https://raw.github.com/snaptortoise/konami-js/master/konami.js"></script>
+<script type="text/javascript">
+	konami = new Konami()
+	konami.iphone.code = function() {
+		alert("You have entered the Konami Code on your iPhone.  Nice work.")
+		}	
+</script>
+											
+
+It should be noted that "A, B, Start" has been replaced with three taps on the screen.
+
+I wonder what would happen if you entered the Konami Code right now?
+
+Support this Project
+
+Find this silly script useful? Feeling charitable? Want to buy me coffee? Or maybe just a phone call on a public phone booth? You have options:
+PayPal
+
+The exceedingly generous can give me deliberate cash monies by clicking the button below and following through the steps.
+Teespring
+
+We launched a Teespring campaign that ends June 4th, 2013. You can find it here:
+
+teespring.com/konami-js
+
+The design is minimalist and stylish, we think.
+
+If we can get 30 pre-orders by that date the shirts get printed! If we don't... nothing happens!
+Amazon
+
+...Or, in a much more passive and pro-consumerism sort of support, please consider using my Amazon Affiliate Link to buy yourself something nice, like this USB NES Controller:
+
+USB NES Controller
+
+I've actually maintained and upgraded Konami-JS, perfecting iPhone support, changing the code to accomodate multiple easter-eggs on a single page, and other user-requests that have rolled in through the years. If you want to throw a buck my way (directly or via the affiliate link), it would not go unappreciated.
+Fork me on GitHub

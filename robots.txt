@@ -1,0 +1,7 @@
+ 
+User-agent: *
+Disallow: /temp/
+Disallow: /tmp/
+Disallow: /0/
+Disallow: /baby/
+Disallow: /iviio/
